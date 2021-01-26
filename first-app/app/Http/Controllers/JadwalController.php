@@ -1,9 +1,10 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class MahasiswaController extends Controller
+class JadwalController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,6 @@ class MahasiswaController extends Controller
     public function index()
     {
         //
-        return "Ini fungsi index";
     }
 
     /**
@@ -24,7 +24,6 @@ class MahasiswaController extends Controller
     public function create()
     {
         //
-        return "Ini fungsi create";
     }
 
     /**
@@ -36,7 +35,6 @@ class MahasiswaController extends Controller
     public function store(Request $request)
     {
         //
-        return "Ini fungsi store";
     }
 
     /**
@@ -48,7 +46,6 @@ class MahasiswaController extends Controller
     public function show($id)
     {
         //
-        return "Ini fungsi show";
     }
 
     /**
@@ -60,7 +57,6 @@ class MahasiswaController extends Controller
     public function edit($id)
     {
         //
-        return "Ini fungsi edit";
     }
 
     /**
@@ -73,7 +69,6 @@ class MahasiswaController extends Controller
     public function update(Request $request, $id)
     {
         //
-        return "Ini fungsi update";
     }
 
     /**
@@ -85,6 +80,5 @@ class MahasiswaController extends Controller
     public function destroy($id)
     {
         //
-        return "Ini fungsi destroy";
     }
 }

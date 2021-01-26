@@ -23,16 +23,14 @@ Route::get('/matkul', function() {
     return "Hello ini Halaman Matkul";
 });
 
-Route::get('/mahasiswa', function() {
-    return "Hello ini Halaman Mahasiswa";
+Route::get('/jadwal', function() {
+    return "Hello ini Halaman Jadwal";
 });
 ```
 
 Jadinya akan seperti dibawah :
 
 ![Route Dahshboard](./src/route::dashboard.png)
-
-![Route Mahasiswa](./src/route::mahasiswa.png)
 
 ![Route Matkul](./src/route::matkul.png)
 

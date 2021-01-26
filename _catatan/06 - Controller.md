@@ -4,7 +4,7 @@ Request yang diterima oleh router akan dikelola oleh fungsi pada router tersebut
 
 Membuat controller Matkul : `php artisan make:controller MatkulController -r`
 
-Membuat controller Mahasiswa : `php artisan make:controller MahasiswaController -r`
+Membuat controller Mahasiswa : `php artisan make:controller JadwalController -r`
 
 -r pada perintah diatas merupakan flag yang memberitahu Artisan untuk menggenerate controller dengan fungsi standar pada file. Artinya pada controller yang digenerat*e dengan flag tersebut sudah memiliki beberapa fungsi seperti *index*, *show*, *update* dll.
 
