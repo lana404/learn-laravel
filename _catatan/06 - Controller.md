@@ -104,7 +104,7 @@ class MahasiswaController extends Controller
 
 ## Konfigurasi Router
 
-Pada [](./05%20-%20Routing.md) kita telah membuat konfigurasi router sederhana, yang mana router tersebut langsung mengembalikan data dari fungsi routernya. Nahh, sekarang kita arahkan router supaya mengembalikan data melalui Controller. Caranya, ubah Controller menjadi seperti diatas. Kemudian, masuk ke *./routes/web.php*, edit *Router::get('/mahasiswa')* menjadi : 
+Pada [Modul Routing](./05%20-%20Routing.md) kita telah membuat konfigurasi router sederhana, yang mana router tersebut langsung mengembalikan data dari fungsi routernya. Nahh, sekarang kita arahkan router supaya mengembalikan data melalui Controller. Caranya, ubah Controller menjadi seperti diatas. Kemudian, masuk ke *./routes/web.php*, edit *Router::get('/mahasiswa')* menjadi : 
 
 ```php
 // Route path /mahasiswa memanggil fungsi index dari class MahasiswaController
