@@ -24,7 +24,33 @@ Dilihat dari hasil generate, class Mahasiswa extend kepada class Model. class Mo
 
 Tentang Eloquent akan kita bahas di modul berikutnya :)
 
-# Mengguanakan Model
+# Menghubungkan models dengan controller
+
+1. Masuk ke `./app/Http/Controllers/JadwalController.php`
+2. Panggil Model kedalam Controller
+   
+   `use App\Models\Jadwal;` (Pastekan diatas class)
+
+3. Ubah fungsi index() pada class JadwalController menjadi seperti dibawah.
+   ```php
+        public function index()
+        {
+            // Mengambil semua data dari database
+            $jadwal = Jadwal::all();
+            return $jadwal;
+        }
+   ```
+4. Sekarang coba. Pasti hasilnya seperti dibawah. Yang mengatakan bahwa table jadwals tidak ada.
+   
+   ![Table Erro](./src/models::tableError.png)
+
+   Secara default ketika kita memanggil Models pada Controller, Laravel akan menambahkan huruf `s` setelah nama class sebagai nama table yang akan dipanggil.
+
+   Untuk mengatasi error diatas kita perlu mengesets nama table terlebih dahulu di class Models.
+
+5. Masuk ke `./app/Http/Models/Jadwal`. Tambahkan kode dibawah ini keadalam class untuk mengeset nama table yang ingin dipanggil.
+   
+   `protected $table = 'jadwal';`
 
 
 

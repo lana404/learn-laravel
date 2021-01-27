@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\JadwalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +23,4 @@ Route::get('/matkul', function() {
 });
 
 // Route path /mahasiswa memanggil fungsi index dari class MahasiswaController
-Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+Route::get('/jadwal', [JadwalController::class, 'index']);

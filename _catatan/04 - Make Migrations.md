@@ -22,9 +22,9 @@ Langsung praktek.
 
 3. Generate table dengan menggunakan artisan.
 
-    `php artisan make:migration create_jadwal_table`
+    `php artisan make:migration create_jadwals_table`
 
-    `php artisan make:migration create_matkul_table`
+    `php artisan make:migration create_matkuls_table`
 
 4. Edit file migration, lengakapi dengan nama column table yang sudah dirancang.
 
@@ -33,7 +33,7 @@ Langsung praktek.
     public function up()
     {
         // CREATE TABLE jadwal(
-        Schema::create('jadwal', function (Blueprint $table) {
+        Schema::create('jadwals', function (Blueprint $table) {
             // 'id' NOT NULL AUTO_INCREMENT PRIMARY KEY,
             $table->bigIncrements('id');
             // 'name' STRING NOT NULL,
@@ -55,7 +55,7 @@ Langsung praktek.
 // Edit function up() pada file create_jadwal_table
     public function up()
     {
-        Schema::create('matkul', function (Blueprint $table) {
+        Schema::create('matkuls', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->timestamps();
