@@ -52,6 +52,113 @@ Tentang Eloquent akan kita bahas di modul berikutnya :)
    
    `protected $table = 'jadwal';`
 
+6. Sekarang coba refresh browser
+   
+   ![Cek Browser](./src/models::selectAll.png)
+
+7. Yeyyy, sudah bisa :v 
+
+
+
+# Membuat Simple CRUD 
+
+## Get All Data
+
+Edit function index() pada JadwalController
+
+```php
+   public function index()
+   {
+      // Mengambil semua data jadwal dari database
+      // Kegunaan all() sama dengan 'SELECT * FROM jadwal'
+      $jadwal = Jadwal::all();
+      // Fungsi mengembalikan nilai berupa data jadwal
+      return $jadwal;
+   }
+```
+
+Buka *localhost:8000/jadwal* untuk melihat hasilnya.
+
+![SelectAll](./src/models::selectAll.png)
+
+Seperti yang kalian lihat, masih Kosong :v. Karena belom ada data didalamnya. Untuk menginputkan akan dibahas dibawah.
+
+## Input Data
+
+```php
+   public function store(Request $request)
+   {
+      // $request merupakan parameter yang berisi informasi 
+      // mengenai request tersebut. Seperti header, body
+      // query parameter dll. Parameter tersebut sudah
+      // otomatis ditangani oleh laravel.
+      $jadwal = new Jadwal();
+      // Set column name dengan nilai dari $request->name
+      $jadwal->name = $request->name;
+      $jadwal->day = $request->day;
+      $jadwal->matkul = $request->matkul;
+      $jadwal->class = $jadwal->class;
+      // Menyimpan data ke database
+      $jadwal->save();
+
+      return $jadwal;
+   }
+```
+Masuk ke `./routes/web.php`, tambahkan :
+
+`Route::post('/jadwal/add', [JadwalController::class, 'show']);`
+
+Hasilnya belum bisa dilihat. Karena kita memerlukan form untuk mencobanya
+
+## Get Data by Id
+
+```php
+   public function show($id)
+   {
+      // Fungnsi find merupakan fungsi default dari class Model
+      // Jadi kita tak perlu menulis ulang fungsi pada class
+      // turunannya
+      // Gunanya untuk mencari data berdasarkan inputan user
+      $jadwal = Jadwal::find($id);
+      return $jadwal
+   }
+```
+
+Masuk ke `./routes/web.php`, tambahkan :
+
+`Route::get('/jadwal/{id}', [JadwalController::class, 'show']);`
+
+## Update Data
+
+```php
+   public function update(Request $request, $id)
+   {
+      // Cari data terlebih dahulu
+      $jadwal = Jadwal::find($id);
+      // Memperbarui nilai
+      $jadwal->name = $request->name;
+      $jadwal->day = $request->day;
+      $jadwal->matkul = $request->matkul;
+      $jadwal->class = $jadwal->class;
+      // Mengupdate data ke database
+      $jadwal->update();
+
+      return $jadwal;  
+    }
+```
+
+## Delete Data
+
+```php
+   public function destroy($id)
+    {
+        //
+        $jadwal = Jadwal::find($id);
+        $jadwal->delete();
+        
+        return "sukses menghapus ".$id;
+    }
+```
 
 
 ## Memaksimalkan Eloquent

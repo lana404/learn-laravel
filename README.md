@@ -1,4 +1,4 @@
-# Daftar Pustaka
+# Table of Contents
 
 Untuk Laravel versi 8.x
 
@@ -8,3 +8,5 @@ Untuk Laravel versi 8.x
 4. [Make Migrations](./_catatan/04%20-%20Make%20Migrations.md)
 5. [Routing](./_catatan/05%20-%20Routing.md)
 6. [Controller](./_catatan/06%20-%20Controller.md)
+7. [Models](./_catatan/07%20-%20Models.md)
+8. [Views](./_catatan/08%20-%20Views.md)
