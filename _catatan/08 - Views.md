@@ -9,3 +9,32 @@ Blade templating menggunakan format `.blade.php`. Letak filenya ada di `./resour
 File blade nantinya akan dikompilasi dalam kode PHP biasa oleh program. Hasil kompilasi nantinya akan disimpan didalam cache hingga diubah. Sehingga blade tidak memberikan beban tambahan ketika aplikasi dijalankan.
 
 # Membuat Views Sederhana
+
+Pada praktek kali ini kita akan membuat halaman dashboard. Let's try :)
+
+1. Buat file baru dengan nama `dashboard.blade.php`. Pada `./resources/views/`
+2. Isikan kode dibawah ini kedalamnya :
+   
+   ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title> Dashboard </title>
+        </head>
+        <body>
+            <div style="text-align: center">
+                <h1> Hello, Selamat datang di Dashboard </h1>
+            </div>
+        </body>
+        </html> 
+   ```
+3. Kemudian edit router pada `./routes/web.php`
+
+    ```php
+        Route::get('/', function () {
+            // Menampilkan halaman dashboard.blade.php
+            return view('dashboard');
+        });
+    ```
+
+4. Sekarang coba refresh halaman dashboard

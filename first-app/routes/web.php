@@ -15,7 +15,7 @@ use App\Http\Controllers\JadwalController;
 */
 
 Route::get('/', function () {
-    return "Hello ini Dashboard";
+    return view('dashboard');
 });
 
 Route::get('/matkul', function() {
