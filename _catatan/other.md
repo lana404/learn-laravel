@@ -1,1 +1,0 @@
-1. https://daengweb.id/tips-menggunakan-eloquent-laravel
