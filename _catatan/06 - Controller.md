@@ -110,3 +110,9 @@ Pada [Modul Routing](./05%20-%20Routing.md) kita telah membuat konfigurasi route
 // Route path /mahasiswa memanggil fungsi index dari class MahasiswaController
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 ```
+
+<br> <br> <hr>
+
+<p align="center">
+    <a href="./05%20-%20Routing.md"> <- Prev </a>| <a href="./07%20-%20Models.md"> Next -> </a>
+</p>

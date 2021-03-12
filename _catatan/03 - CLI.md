@@ -63,3 +63,9 @@ Selain menggunakan *create_* kita juga harus menambahkan huruf *s* dalam penulis
 ## Membuat Model, Factory, Seeder dan Controller bersamaan
 
 `php artisan make:model Flight -mfsc`
+
+<br> <br> <hr>
+
+<p align="center">
+    <a href="./02%20-%20Struktur%20Folder.md"> <- Prev </a>| <a href="./04%20-%20Make%20Migrations.md"> Next -> </a>
+</p>

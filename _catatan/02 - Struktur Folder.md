@@ -27,3 +27,8 @@ project
    |-- tests
    |-- vendor
 ```
+<br> <br> <hr>
+
+<p align="center">
+    <a href="01%20-%20Getting%20Start.md"> <- Prev </a>| <a href="./03%20-%20CLI.md"> Next -> </a>
+</p>

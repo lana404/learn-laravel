@@ -35,3 +35,9 @@ Jadinya akan seperti dibawah :
 ![Route Matkul](./src/route::matkul.png)
 
 Untuk mengaksesnya jalankan `php artisan serve`
+
+<br> <br> <hr>
+
+<p align="center">
+    <a href="./04%20-%20Make%20Migrations.md"> <- Prev </a>| <a href="./06%20-%20Controller.md"> Next -> </a>
+</p>

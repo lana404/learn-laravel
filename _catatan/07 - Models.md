@@ -160,7 +160,8 @@ Masuk ke `./routes/web.php`, tambahkan :
     }
 ```
 
+<br> <br> <hr>
 
-## Memaksimalkan Eloquent
-
-Seperti yang sudah dijelaskan diatas. 
+<p align="center">
+    <a href="./06%20-%20Controller.md"> <- Prev </a>| <a href="./08%20-%20Views.md"> Next -> </a>
+</p>

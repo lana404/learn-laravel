@@ -51,3 +51,11 @@ Seperti yang telah dibahas di [Pengenalan Blade](#apa-itu-blade), dengan menggun
 https://informatika.uc.ac.id/2019/09/laravel-view-blade/
 
 https://medium.com/easyread/membuat-tampilan-web-dengan-blade-pada-aplikasi-laravel-part-i-c9f5ceee65e6
+
+<br> <br> <hr>
+
+<p align="center">
+    <a href="./07%20-%20Models.md"> <- Prev </a>| <a href="#"> Next -> </a>
+</p>
+
+[]()

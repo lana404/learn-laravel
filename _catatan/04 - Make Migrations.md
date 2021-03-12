@@ -79,3 +79,9 @@ Langsung praktek.
 
 `php artisan migrate`
 
+
+<br> <br> <hr>
+
+<p align="center">
+    <a href="./03%20-%20CLI.md"> <- Prev </a>| <a href="./05%20-%20Routing.md"> Next -> </a>
+</p>

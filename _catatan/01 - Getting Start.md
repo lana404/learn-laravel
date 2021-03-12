@@ -67,3 +67,10 @@ __Note__ : *Laravel Sail provides a simple command-line interface for interactin
 2. Buka file .env
 3. Ubah APP_NAME, DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD.
 4. Lakukan juga pengaturan pada `config/app.php`
+
+
+<br> <br> <hr>
+
+<p align="center">
+   <a href="./02%20-%20Struktur%20Folder.md"> Next -> </a>
+</p>
