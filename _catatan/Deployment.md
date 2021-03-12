@@ -29,6 +29,10 @@ Perintah diatas menjadikan route registrations menjadi satu method panggilan dal
 Meningkatkan kinerja ketika request return a view.
 
 
-
-
 More Information : https://laravel.com/docs/8.x/deployment
+
+
+# Tutorial
+
+1. [How to Upload Project on Subdomain](https://stackoverflow.com/questions/39886926/how-to-upload-laravel-project-on-subdomain)
+2. [Masalah "Your IP address has changed. Please log in again" ketika login CPanel](https://idwebhost.com/blog/hosting-guru/mengatasi-masalah-your-ip-address-has-changed-saat-login-cpanel/)
